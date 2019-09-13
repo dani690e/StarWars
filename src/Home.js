@@ -9,7 +9,7 @@ class Home extends Component {
         axios.get('https://swapi.co/api/people')
             .then(res => {
                 this.setState({
-                    posts: res.data.results.slice(0,6)
+                    posts: res.data.results.slice(0,10)
                 })
             })
     }
